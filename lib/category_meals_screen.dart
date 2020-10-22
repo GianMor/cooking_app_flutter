@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
+  static const routeName = '/category-meals';
   // final int categoryId;
   // final String categoryTitle;
 
@@ -8,11 +9,11 @@ class CategoryMealsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final routeArgs = ModalRoute.of(context).settings.arguments as Map<String,String>;
+    final routeArgs = ModalRoute.of(context).settings.arguments as Map<String,Object>;
     final categoryTitle = routeArgs['title'];
     final categoryId = routeArgs['id'];
     return Scaffold(
         appBar: AppBar(title: Text(categoryTitle)),
-        body: Center(child: Text("Recipes category")));
+        body: Center(child: Text("Recipes category $categoryId")));
   }
 }
