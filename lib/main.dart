@@ -1,3 +1,4 @@
+import 'package:cooking_app_flutter/categories_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,36 +11,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('title'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
-        ),
-      ),
+          primarySwatch: Colors.blue,
+          accentColor: Colors.amber,
+          canvasColor: Colors.cyan,
+          fontFamily: 'Raleway',
+          textTheme: ThemeData.light().textTheme.copyWith(
+              bodyText1: TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
+              bodyText2: TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
+              headline1:
+                  TextStyle(fontSize: 24, fontFamily: 'RobotoCondensed'))),
+      home: CategoriesScreen(),
     );
   }
 }
