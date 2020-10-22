@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './models/category.dart';
-import './models/meal.dart';
+import '../models/category.dart';
+import '../models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Category(
@@ -158,7 +158,7 @@ const DUMMY_MEALS = const [
     ],
     title: 'Wiener Schnitzel',
     affordability: Affordability.Luxurious,
-    complexity: Complexity.Challenging,
+    complexity: Complexity.Medium,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     duration: 60,
@@ -296,7 +296,7 @@ const DUMMY_MEALS = const [
     ],
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.Pricey,
-    complexity: Complexity.Challenging,
+    complexity: Complexity.Medium,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
     duration: 35,
