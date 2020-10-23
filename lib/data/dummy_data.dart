@@ -60,8 +60,8 @@ const DUMMY_MEALS = const [
   Meal(
     id: 1,
     categories: [
-      'c1',
-      'c2',
+      1,
+      2,
     ],
     title: 'Spaghetti with Tomato Sauce',
     affordability: Affordability.Affordable,
@@ -94,7 +94,7 @@ const DUMMY_MEALS = const [
   Meal(
     id: 2,
     categories: [
-      'c2',
+      2,
     ],
     title: 'Toast Hawaii',
     affordability: Affordability.Affordable,
@@ -122,8 +122,8 @@ const DUMMY_MEALS = const [
   Meal(
     id: 3,
     categories: [
-      'c2',
-      'c3',
+      2,
+      3,
     ],
     title: 'Classic Hamburger',
     affordability: Affordability.Pricey,
@@ -154,7 +154,7 @@ const DUMMY_MEALS = const [
   Meal(
     id: 4,
     categories: [
-      'c4',
+      4,
     ],
     title: 'Wiener Schnitzel',
     affordability: Affordability.Luxurious,
@@ -189,9 +189,9 @@ const DUMMY_MEALS = const [
   Meal(
     id: 5,
     categories: [
-      'c2'
-          'c5',
-      'c10',
+      2,
+      5,
+      10,
     ],
     title: 'Salad with Smoked Salmon',
     affordability: Affordability.Luxurious,
@@ -225,8 +225,8 @@ const DUMMY_MEALS = const [
   Meal(
     id: 6,
     categories: [
-      'c6',
-      'c10',
+      6,
+      10,
     ],
     title: 'Delicious Orange Mousse',
     affordability: Affordability.Affordable,
@@ -261,7 +261,7 @@ const DUMMY_MEALS = const [
   Meal(
     id: 7,
     categories: [
-      'c7',
+      7,
     ],
     title: 'Pancakes',
     affordability: Affordability.Affordable,
@@ -292,7 +292,7 @@ const DUMMY_MEALS = const [
   Meal(
     id: 8,
     categories: [
-      'c8',
+      8,
     ],
     title: 'Creamy Indian Chicken Curry',
     affordability: Affordability.Pricey,
@@ -325,7 +325,7 @@ const DUMMY_MEALS = const [
   Meal(
     id: 9,
     categories: [
-      'c9',
+      9,
     ],
     title: 'Chocolate Souffle',
     affordability: Affordability.Affordable,
@@ -374,9 +374,9 @@ const DUMMY_MEALS = const [
   Meal(
     id: 10,
     categories: [
-      'c2',
-      'c5',
-      'c10',
+      2,
+      5,
+      10,
     ],
     title: 'Asparagus Salad with Cherry Tomatoes',
     affordability: Affordability.Luxurious,
@@ -406,4 +406,3 @@ const DUMMY_MEALS = const [
     isLactoseFree: true,
   ),
 ];
-

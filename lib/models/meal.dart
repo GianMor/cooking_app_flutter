@@ -6,7 +6,7 @@ enum Affordability { Affordable, Pricey, Luxurious }
 
 class Meal {
   final int id;
-  final List<String> categories;
+  final List<int> categories;
   final String title;
   final String imageUrl;
   final List<String> ingredients;
