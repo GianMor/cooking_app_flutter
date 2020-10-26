@@ -1,4 +1,4 @@
-import 'package:cooking_app_flutter/screens/favorites_screen.dart';
+import 'package:cooking_app_flutter/screens/filter_screen.dart';
 import 'package:cooking_app_flutter/screens/meal_detail_screen.dart';
 import 'package:cooking_app_flutter/screens/tabs_screen.dart';
 
@@ -29,9 +29,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (ctx) => TabsScreen(),
-        CategoryMealsScreen.routeName:(ctx) => CategoryMealsScreen(),
-        MealDetailScreen.routeName:(ctx) => MealDetailScreen(),
-        FavoritesScreen.routeName:(ctx) => FavoritesScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
     );
   }

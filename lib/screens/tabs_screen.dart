@@ -1,5 +1,6 @@
 import 'package:cooking_app_flutter/screens/categories_screen.dart';
 import 'package:cooking_app_flutter/screens/favorites_screen.dart';
+import 'package:cooking_app_flutter/screens/filter_screen.dart';
 import 'package:cooking_app_flutter/widgets/main_drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class TabsScreen extends StatefulWidget {
 class _TabsScreenState extends State<TabsScreen> {
   final List<Map<String, Object>> _pages = [
     {'page': CategoriesScreen(), 'title': 'Categories'},
-    {'page': FavoritesScreen(), 'title': 'Your favorite'}
+    {'page': FavoritesScreen(), 'title': 'Favorite'}
   ];
 
   int _selectedPageIndex = 0;

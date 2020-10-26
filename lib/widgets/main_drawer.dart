@@ -1,8 +1,9 @@
 import 'package:cooking_app_flutter/screens/favorites_screen.dart';
+import 'package:cooking_app_flutter/screens/filter_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
-  Widget buildListTile(String title, IconData icon,Function tapHandler) {
+  Widget buildListTile(String title, IconData icon, Function tapHandler) {
     return ListTile(
       leading: Icon(icon, size: 26),
       title: Text(
@@ -35,9 +36,14 @@ class MainDrawer extends StatelessWidget {
                 color: Theme.of(context).primaryColor),
           ),
         ),
-        buildListTile('Meals', Icons.settings,()=>Navigator.of(context).pushNamed('/')),
+        buildListTile('Meals', Icons.settings,
+            () => Navigator.of(context).pushReplacementNamed('/')),
         SizedBox(height: 20),
-        buildListTile('Filter', Icons.restaurant,()=>Navigator.of(context).pushNamed(FavoritesScreen.routeName)),
+        buildListTile(
+            'Filter',
+            Icons.restaurant,
+            () => Navigator.of(context)
+                .pushReplacementNamed(FiltersScreen.routeName)),
       ],
     ));
   }
