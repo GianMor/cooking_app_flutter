@@ -1,4 +1,3 @@
-import 'package:cooking_app_flutter/screens/favorites_screen.dart';
 import 'package:cooking_app_flutter/screens/filter_screen.dart';
 import 'package:flutter/material.dart';
 
