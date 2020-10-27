@@ -2,7 +2,6 @@ import 'package:cooking_app_flutter/models/meal.dart';
 import 'package:cooking_app_flutter/widgets/meal_item.dart';
 import 'package:flutter/material.dart';
 
-
 class CategoryMealsScreen extends StatefulWidget {
   static const routeName = '/category-meals';
 
@@ -39,11 +38,11 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
     super.didChangeDependencies();
   }
 
-  void _removeMeal(int mealId) {
-    setState(() {
-      displayedMeals.removeWhere((meal) => meal.id == mealId);
-    });
-  }
+  // void _removeMeal(int mealId) {
+  //   setState(() {
+  //     displayedMeals.removeWhere((meal) => meal.id == mealId);
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -52,13 +51,13 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
         body: ListView.builder(
             itemBuilder: (context, index) {
               return MealItem(
-                  id: displayedMeals[index].id,
-                  title: displayedMeals[index].title,
-                  url: displayedMeals[index].imageUrl,
-                  duration: displayedMeals[index].duration,
-                  complexity: displayedMeals[index].complexity,
-                  affordability: displayedMeals[index].affordability,
-                  removeItem: _removeMeal);
+                id: displayedMeals[index].id,
+                title: displayedMeals[index].title,
+                url: displayedMeals[index].imageUrl,
+                duration: displayedMeals[index].duration,
+                complexity: displayedMeals[index].complexity,
+                affordability: displayedMeals[index].affordability,
+              );
             },
             itemCount: displayedMeals.length));
   }
